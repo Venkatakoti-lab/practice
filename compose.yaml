@@ -57,5 +57,15 @@ services:
       AMQP_HOST: rabbitmq
       AMQP_USER: roboshop
       AMQP_PASS: roboshop123
-
+  frontend:
+    image: koti0120/frontend:1.0.0
+    container_name: frontend
+    ports:
+      - 80:80
+    depends_on:
+    - catalogue
+    - user
+    - cart
+    - shipping
+    - payment
   
