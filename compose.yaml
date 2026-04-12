@@ -58,7 +58,7 @@ services:
       AMQP_USER: roboshop
       AMQP_PASS: roboshop123
   frontend:
-    image: koti0120/frontend:1.0.0
+    image: koti0120/web:1.0.0
     container_name: frontend
     ports:
       - 80:80
