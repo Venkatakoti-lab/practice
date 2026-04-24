@@ -12,3 +12,7 @@ services:
     container_name: catalogue
     depends_on:
       - mongodb
+  redis:
+    image: redis:7
+    container_name: redis
+    
