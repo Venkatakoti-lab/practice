@@ -65,3 +65,14 @@ services:
       - roboshop
     depends_on:
       - rabbitmq
+  frontend:
+    image: frontend:v1
+    container_name: frontend
+    networks:
+      - roboshop
+    depends_on:
+      - catalogue
+      - user
+      - cart
+      - shipping
+      - payment
