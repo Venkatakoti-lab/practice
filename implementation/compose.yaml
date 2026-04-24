@@ -1,5 +1,6 @@
 networks:
   roboshop:
+    name: roboshop
     driver: bridge
     # external: true
 services:
