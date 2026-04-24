@@ -68,6 +68,8 @@ services:
   frontend:
     image: frontend:v1
     container_name: frontend
+    ports:
+      - "8080:80"
     networks:
       - roboshop
     depends_on:
