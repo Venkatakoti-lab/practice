@@ -1,6 +1,6 @@
 FROM maven
 WORKDIR /opt/server
-COPY src/* .
+COPY src/ /opt/server/src
 COPY pom.xml .
 CMD ["sleep", "1000"]
 # RUN mvn clean package
