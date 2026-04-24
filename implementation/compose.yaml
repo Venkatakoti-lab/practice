@@ -15,4 +15,8 @@ services:
   redis:
     image: redis:7
     container_name: redis
-    
+  user:
+    image: user:v1
+    container_name: user
+    depends_on:
+      - redis
